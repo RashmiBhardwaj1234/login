@@ -16,11 +16,11 @@ public class LoginDao {
         PreparedStatement pst = null;
         ResultSet rs = null;
 
-        String url = "jdbc:mysql://localhost/";
+        String url = "jdbc:mysql://35.185.50.205:3306/COMPOSITEAPPS";
         String dbName = "COMPOSITEAPPS";
         String driver = "com.mysql.jdbc.Driver";
-        String userName = "mysqluser";
-        String password = "mysqlpassword";
+        String userName = "root";
+        String password = "admin";
 
         try {
             Class.forName(driver).newInstance();
