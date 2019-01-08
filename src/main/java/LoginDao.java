@@ -16,7 +16,7 @@ public class LoginDao {
         PreparedStatement pst = null;
         ResultSet rs = null;
 
-        String url = "jdbc:mysql://35.185.50.205:3306/COMPOSITEAPPS";
+        String url = "jdbc:mysql://35.185.50.205:3306/";
         String dbName = "COMPOSITEAPPS";
         String driver = "com.mysql.jdbc.Driver";
         String userName = "root";
@@ -74,11 +74,11 @@ public class LoginDao {
         else {
             try {
 
-            	String url = "jdbc:mysql://localhost/";
+            	   String url = "jdbc:mysql://35.185.50.205:3306/";
                 String dbName = "COMPOSITEAPPS";
                 String driver = "com.mysql.jdbc.Driver";
-                String userName = "mysqluser";
-                String password = "mysqlpassword";
+                 String userName = "root";
+             String password = "admin";
 
                 Class.forName(driver);
                 connection = DriverManager.getConnection(url + dbName, userName, password);
